@@ -136,6 +136,28 @@ img[alt="Profile Picuture"] {
 }
 
 /* ===== About — Bio ===== */
+.bio-section {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+}
+
+.bio {
+  flex: 1;
+}
+
+img[alt="About Me Picture"] {
+  width: 220px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 8px;
+  border: 1px solid #2a2a2a;
+  flex-shrink: 0;
+  display: block;
+}
+
 .bio p {
   font-size: 1rem;
   line-height: 1.8;
@@ -522,5 +544,11 @@ textarea {
 
   .divider {
     margin: 2rem 0;
+  }
+ 
+  img[alt="About Me Picture"] {
+    max-height: 260px;
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
   }
 }
